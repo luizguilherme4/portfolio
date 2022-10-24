@@ -22,6 +22,12 @@ section {
     margin: 0 auto;
 }
 
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
 .inspecionar {
     border: 5px solid red;
 }
@@ -75,4 +81,8 @@ section {
     color: #FFFFFF;
     padding: 1rem 2rem;
     text-decoration: none;
+}
+
+.about {
+    background-color: #162340;
 }
