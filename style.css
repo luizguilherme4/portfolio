@@ -1,200 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    font-size: 62.5%;
+}
 
 body {
-    background: linear-gradient(300deg, #373b44, #4286f4, #c442f4);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
 }
 
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+.inpecionar {
+    border: 5px solid red;
 }
 
-.container {
-    background: linear-gradient(107.15deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
-    border: 0.125rem solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(0.063rem);
-
-    color: #1C1C1C;
-    margin: 4rem;
-    padding: 4rem;
-    border-radius: 1.25rem;
-    box-shadow: 0rem 0.25rem 3.125rem rgba(0, 0, 0, 0.7);
+.nav {
+    padding: 2rem 6rem;
 }
 
-.cabecalho {
+.nav-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 2rem;
 }
 
-.perfil {
-    display: flex;
-}
-
-.perfil-foto {
-    max-width: 10rem;
-    border-radius: 100%;
-    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
-}
-
-.titulo {
-    margin-left: 1rem;
-}
-
-.titulo h1 {
-    font-weight: 700;
-    font-size: 2.25rem;
-}
-
-.titulo h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-.portfolio {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.projetos {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem 2rem;
-    margin-top: 2rem;
-
-    border: 0.063rem solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(0.063rem);
-    border-radius: 1.25rem;
-    box-shadow: 0rem 0.25rem 3.125rem rgba(0, 0, 0, 0.5);
-}
-
-.habilidades {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.5rem 2rem;
-
-    border: 0.063rem solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(0.063rem);
-    border-radius: 1.25rem;
-    box-shadow: 0rem 0.25rem 3.125rem rgba(0, 0, 0, 0.5);
-}
-
-.projetos ul {
-    list-style: none;
-    padding-left: 3rem;
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.projetos li {
-    padding-left: 3rem;
-    list-style-type: none;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 2em;
-}
-
-.habilidades ul {
-    list-style: none;
-    padding-left: 0;
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.habilidades li {
-    list-style-type: none;
-}
-
-.habilidades img {
-    max-height: 6.25rem;
-}
-
-::-webkit-scrollbar {
-    width: 0.313rem;
-    height: 0.313rem;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #1C1C1C;
-    border: 0.113rem solid #1C1C1C;
-    border-radius: 6.25rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #ECF4FF;
-}
-
-::-webkit-scrollbar-track {
-    background: #ECF4FF;
-    border-radius: 6.25rem;
-    box-shadow: inset 0rem 0rem 0rem 0rem #F0F0F0;
-    margin: 0.938rem 0rem;
-}
-
-@media (max-width: 1023px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    .perfil {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .perfil-foto {
-        max-width: 9rem;
-    }
-
-    .titulo {
-        margin-left: 1.5rem;
-    }
-
-    .titulo h1 {
-        font-weight: 700;
-        font-size: 2rem;
-    }
-
-    .titulo h3 {
-        font-weight: 700;
-        font-size: 1rem;
-    }
-
-
-    .habilidades {
-        flex-direction: column;
-    }
-
-    .portfolio {
-        margin-top: 0.5rem;
-    }
-
-    .projetos ul, .projetos li {
-        padding-left: 0;
-    }
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
