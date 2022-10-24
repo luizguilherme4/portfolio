@@ -16,12 +16,25 @@ body {
     font-size: 1.6rem;
 }
 
-.inpecionar {
+section {
+    padding: 5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.inspecionar {
     border: 5px solid red;
+}
+
+.itens-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav {
     padding: 2rem 6rem;
+    margin-bottom: 2rem;
 }
 
 .nav-links {
@@ -32,5 +45,34 @@ body {
 
 .nav-links a {
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+.avatar {
+    border-radius: 100%;
+    border: 0.4rem solid #FFFFFF;
+    width: 24rem;
+    height: 24rem;
+
+    margin-right: 10rem;
+}
+
+.main-title {
+    font-size: 4rem;
+}
+
+.main-icon {
+    margin: 4rem 0;
+}
+
+.main-icon img {
+    margin-right: 2rem;
+}
+
+.button {
+    border-radius: 0.4rem;
+    background-color: #0039CC;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
     text-decoration: none;
 }
