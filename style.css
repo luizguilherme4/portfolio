@@ -16,10 +16,14 @@ body {
     font-size: 1.6rem;
 }
 
-section {
+section, footer {
     padding: 5rem;
     max-width: 96rem;
     margin: 0 auto;
+}
+
+footer {
+    flex-direction: column;
 }
 
 h2 {
@@ -126,4 +130,9 @@ h2 {
 
 .project-link img {
     margin-left: 0.5rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
 }
