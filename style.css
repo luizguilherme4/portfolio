@@ -136,3 +136,48 @@ h2 {
     display: flex;
     gap: 2rem;
 }
+
+@media(max-width: 1200px) {
+    .itens-center {
+        flex-direction: column;
+    }
+
+    footer, section {
+        padding: 3rem;
+    }
+
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .project-img {
+        width: 31rem;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .nav {
+        margin-bottom: 0;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .avatar {
+        width: 18rem;
+        height: 18rem;
+        margin-right: 0;
+    }
+
+    .main-icon img {
+        width: 4rem;
+        height: 4rem;
+
+        margin-right: 1rem;
+    }
+}
