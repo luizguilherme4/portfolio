@@ -17,24 +17,17 @@ body {
     font-size: 1.6rem;
 }
 
-section, footer {
+section,
+footer {
     padding: 5rem;
     max-width: 96rem;
     margin: 0 auto;
-}
-
-footer {
-    flex-direction: column;
 }
 
 h2 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
-}
-
-.inspecionar {
-    border: 5px solid red;
 }
 
 .itens-center {
@@ -58,6 +51,7 @@ h2 {
 .nav-links a {
     color: #FFFFFF;
     text-decoration: none;
+    border-bottom: 2px solid transparent
 }
 
 .main {
@@ -79,10 +73,10 @@ h2 {
 
 .main-icon {
     margin: 4rem 0;
-}
-
-.main-icon img {
-    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
 }
 
 .button {
@@ -93,24 +87,31 @@ h2 {
     text-decoration: none;
 }
 
-.project {
-    margin: 4rem 0;
-}
-
 .about {
     background-color: #162340;
 }
 
+.project {
+    margin: 4rem 0;
+}
+
 .project-img {
-    width: 48rem;
-    height: 24rem;
+    width: 52rem;
+    height: 28rem;
     margin-right: 2.5rem;
     border-radius: 0.7rem;
 }
 
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
 .project-title {
     font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 .project-buttons {
@@ -119,8 +120,14 @@ h2 {
     margin-top: 1.5rem;
 }
 
-.project-link:hover, .button:hover {
-    filter: opacity(0.9);
+.project-link:hover,
+.button:hover,
+.nav-links a:hover {
+    filter: opacity(0.8);
+}
+
+.nav-links a:hover {
+    border-color: #FFFFFF;
 }
 
 .project-link {
@@ -138,32 +145,31 @@ h2 {
     margin-left: 0.5rem;
 }
 
+footer {
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #162340;
+}
+
 .footer-social {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+}
+
+.footer-social a:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
 }
 
 @media(max-width: 1200px) {
     .itens-center {
         flex-direction: column;
+        text-align: center;
     }
 
-    footer, section {
+    footer,
+    section {
         padding: 3rem;
-    }
-
-    .main {
-        margin-bottom: 2rem;
-    }
-
-    .main-title {
-        font-size: 3rem;
-    }
-
-    .project-img {
-        width: 31rem;
-        height: auto;
-        margin-right: 0;
     }
 
     .nav {
@@ -180,10 +186,46 @@ h2 {
         margin-right: 0;
     }
 
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .main-icon {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .main-icon img {
         width: 4rem;
         height: 4rem;
+    }
 
-        margin-right: 1rem;
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .about section {
+        text-align: center;
+    }
+
+    .about section p {
+        text-align: left;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-img {
+        width: 31rem;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .project-description {
+        align-items: center;
     }
 }
